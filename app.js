@@ -25,6 +25,7 @@ for (let i = 1; i <= 100; i++) {
 //Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
 
+console.log("=== While Loop: ===");
 var i3a = 1;
 while (i3a <= 100) {
   if (i3a % 2 == 1) {
@@ -33,6 +34,7 @@ while (i3a <= 100) {
   i3a++;
 }
 
+console.log("=== While Loop: ===");
 var i3b = 1;
 while (i3b <= 100) {
   if (i3b % 3 == 0 && i3b % 5 == 0) {
@@ -44,6 +46,28 @@ while (i3b <= 100) {
   }
   i3b++;
 }
+
+console.log("=== Do While Loop: ===");
+var i3a = 1;
+do {
+  if (i3a % 2 == 1) {
+    console.log(i3a);
+  }
+  i3a++;
+} while (i3a <= 100);
+
+console.log("=== Do While Loop: ====");
+var i3b = 1;
+do {
+  if (i3b % 3 == 0 && i3b % 5 == 0) {
+    console.log(`${i3b}: FIZZBUZZ`);
+  } else if (i3b % 3 == 0) {
+    console.log(`${i3b}: FIZZ`);
+  } else if (i3b % 5 == 0) {
+    console.log(`${i3b}: BUZZ`);
+  }
+  i3b++;
+} while (i3b <= 100);
 
 //Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
